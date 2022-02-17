@@ -1,0 +1,10 @@
+overwrite: true
+schema: "https://api-sa-east-1.graphcms.com/v2/ckzlxh1qw3zkb01yy4d5r61e1/master"
+documents: "src/graphql/queries.ts"
+generates:
+  src/graphql/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - add:
+          content: '/* eslint-disable */'
